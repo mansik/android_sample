@@ -38,8 +38,9 @@ public class MainActivity extends Activity implements OnClickListener {
 			db.insert("dic", null, row);
 			
 			//2. SQL 명령으로 삽입
-			db.execSQL("INSERT INTO dic VALUES (null,'girl','가시나');");
-			db.execSQL("INSERT INTO dic VALUES (null,'man','남자');");
+			db.execSQL("INSERT INTO dic VALUES (null, 'girl', '가시나');");
+			//db.execSQL("INSERT INTO dic VALUES (null,'girl','가시나');");
+			//db.execSQL("INSERT INTO dic VALUES (null,'man','남자');");
 			
 			mHelper.close();
 			
